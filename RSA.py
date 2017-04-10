@@ -42,6 +42,8 @@ while x != 3:
             messageInt[i] = (messageInt[i]**e) % n
 
         #error handling (make it convert to a char not gibberish)
+        #this section forces the message to be in the ascii values
+        # 32 - 127
         for i in range(len(messageInt)):
                 if messageInt[i]%2==1:
                     messageInt[i]+=1
